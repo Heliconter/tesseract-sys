@@ -12,9 +12,7 @@ links = "tesseract"
 build = "build.rs"
 
 [dependencies]
-leptonica-sys = "~0.3"
+leptonica-sys = {git = "https://github.com/Heliconter/leptonica-sys.git"}
 
 [build-dependencies]
 bindgen = "0.56"
-[target.'cfg(windows)'.build-dependencies]
-vcpkg = "0.2.8"
